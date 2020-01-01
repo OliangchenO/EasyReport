@@ -36,8 +36,8 @@ public class DataSourceConfig extends AbstractDataSourceConfig {
             .setName("mybatis_sample")
             .setScriptEncoding("UTF-8")
             .ignoreFailedDrops(true)
-            .addScript("sql/schema.sql")
-            .addScripts("sql/data.sql")
+//            .addScript("sql/schema.sql")
+//            .addScripts("sql/data.sql")
             .build();
     }
 

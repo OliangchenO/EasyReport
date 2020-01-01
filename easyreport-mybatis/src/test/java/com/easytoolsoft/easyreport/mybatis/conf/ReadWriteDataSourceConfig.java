@@ -38,8 +38,8 @@ public class ReadWriteDataSourceConfig extends AbstractDataSourceConfig {
             .setScriptEncoding("UTF-8")
             .ignoreFailedDrops(true)
             .setName("mybatis_sample_master")
-            .addScript("sql/schema.sql")
-            .addScripts("sql/data.sql")
+//            .addScript("sql/schema.sql")
+//            .addScripts("sql/data.sql")
             .build();
     }
 
@@ -50,8 +50,8 @@ public class ReadWriteDataSourceConfig extends AbstractDataSourceConfig {
             .setScriptEncoding("UTF-8")
             .ignoreFailedDrops(true)
             .setName("mybatis_sample_slave")
-            .addScript("sql/schema.sql")
-            .addScripts("sql/data.sql")
+//            .addScript("sql/schema.sql")
+//            .addScripts("sql/data.sql")
             .build();
     }
 

@@ -1,5 +1,5 @@
 server:
-  port: @server.port@
+  port: '@server.port@'
   error:
     whitelabel:
       enabled: false
@@ -23,13 +23,13 @@ easytoolsoft:
             version: '@easytoolsoft.easyreport.env.version@'
         member:
             datasource:
-                driver-class-name: org.h2.Driver
+                driver-class-name: com.mysql.jdbc.Driver
                 password: '@easytoolsoft.easyreport.member.datasource.password@'
                 url: '@easytoolsoft.easyreport.member.datasource.url@'
                 username: '@easytoolsoft.easyreport.member.datasource.username@'
         meta:
             datasource:
-                driver-class-name: org.h2.Driver
+                driver-class-name: com.mysql.jdbc.Driver
                 password: '@easytoolsoft.easyreport.meta.datasource.password@'
                 url: '@easytoolsoft.easyreport.meta.datasource.url@'
                 username: '@easytoolsoft.easyreport.meta.datasource.username@'
@@ -61,12 +61,12 @@ spring:
 # logging
 #
 logging:
-  config: @logging.config@
-  path: @logging.path@
+  config: '@logging.config@'
+  path: '@logging.path@'
   level:
-    default: @logging.level.default@
-    ucenter: @logging.level.easyreport@
-    mybatis: @logging.level.mybatis@
+    default: '@logging.level.default@'
+    ucenter: '@logging.level.easyreport@'
+    mybatis: '@logging.level.mybatis@'
 #
 # management
 #

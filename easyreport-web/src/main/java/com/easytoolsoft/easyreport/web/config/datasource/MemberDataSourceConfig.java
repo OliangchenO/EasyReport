@@ -45,10 +45,10 @@ public class MemberDataSourceConfig extends AbstractDataSourceConfig {
         DruidDataSource dsh = firstDataSourceProperties().initializeDataSourceBuilder().type
             (DruidDataSource.class).build();
         dsh.setValidationQuery("select 1");
-        Resource initSchema = new ClassPathResource("schema.sql");
-        Resource initData = new ClassPathResource("data.sql");
-        DatabasePopulator databasePopulator = new ResourceDatabasePopulator(initSchema, initData);
-        DatabasePopulatorUtils.execute(databasePopulator, dsh);
+//        Resource initSchema = new ClassPathResource("schema.sql");
+//        Resource initData = new ClassPathResource("data.sql");
+//        DatabasePopulator databasePopulator = new ResourceDatabasePopulator(initSchema, initData);
+//        DatabasePopulatorUtils.execute(databasePopulator, dsh);
         return dsh;
     }
 
